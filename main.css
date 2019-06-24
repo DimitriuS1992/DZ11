@@ -95,19 +95,23 @@
      background-color: yellow;
     
 }*/
-
-body{
-    background-image: url(https://i.imgur.com/rsvgdbm.png);
-    background-size: contain;
-    text-align: center;
+html { 
+height: 100%;
+}
+body {
+    margin: 0; 
+    height: 100%; 
+    background-image: url(https://avatars.mds.yandex.net/get-pdb/1627222/aafc44e3-e997-4ea3-95c2-96763459c1f3/orig);
+    background-size: cover;
 }
 
 .Moon{
-    position:relative;
-    top: 300px;
-    left: 40%;
+    position:absolute;
+    top: 50%;
+    left: 50%;
     width: 500px;
     height: 400px;
+    transform: translate(-50%, -50%);
  
     }
 .nlo{
