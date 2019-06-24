@@ -1,0 +1,159 @@
+/*.div1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: translate(10px, 20px);
+}
+
+.div2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: rotate(60deg);
+}
+.div3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: scale(2,3)  translate(50px, 20px);
+}
+.div4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: scale(2,3)  translate(50px, 20px) skewX(70deg) skewY(20deg); искажение
+}
+.div5{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: matrix(2, -0.3, 0, 2, 100, 100)
+}
+
+.div6{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transform: matrix(2, -0.3, 0, 2, 100, 100);
+    transform-origin: right bottom;
+}*/
+/*.div1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+     transition-property: width;
+    transition-duration: 3s;
+}
+.div1:hover{
+    width: 600px;
+}
+
+.div2{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+     transition-property: width;
+    transition-duration: 3s;
+     transition-timing-function: linear;
+}
+.div2:hover{
+    width: 300px;
+}
+.div3{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+     transition-property: width;
+    transition-duration: 3s;
+     transition-timing-function: linear;
+    transition-delay: 2s;
+}
+.div3:hover{
+    width: 800px;
+}
+.div4{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+     transition:width 2s linear 2s;
+}
+.div4:hover{
+    width: 800px;
+}
+
+.div4{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    transition:all 2s ease-in-out 2s;
+    transform: translate(100px, 200px);
+
+}
+.div4:hover{
+    width: 800px;
+    height: 600px;
+     background-color: yellow;
+    
+}*/
+
+body{
+    background-image: url(https://i.imgur.com/rsvgdbm.png);
+    background-size: contain;
+    text-align: center;
+}
+
+.Moon{
+    position:relative;
+    top: 300px;
+    left: 40%;
+    width: 500px;
+    height: 400px;
+ 
+    }
+.nlo{
+    position:absolute;
+    top: 50%;
+    left: 40%;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;  
+}
+.nlo1 , .nlo2 , .nlo3 , .nlo4 , .nlo5 , .nlo6 , .nlo7 , .nlo8{
+  transition-property: transform;
+  transition-duration: 1s;
+     
+}
+
+.Moon:hover .nlo1{
+    transform: translate(-600px, -300px);
+     transition-delay:0s;  
+}
+.Moon:hover .nlo2{
+    transform: translate(0px, -300px);
+     transition-delay:0.2s;  
+}
+.Moon:hover .nlo3{
+    transform: translate(600px, -300px);
+     transition-delay:0.4s;  
+}
+.Moon:hover .nlo4{
+    transform: translate(600px, 0px);
+     transition-delay:0.6s;  
+}
+.Moon:hover .nlo5{
+    transform: translate(600px, 300px);
+     transition-delay:0.8s;  
+}
+.Moon:hover .nlo6{
+    transform: translate(0px, 300px);
+     transition-delay:1s;  
+}
+.Moon:hover .nlo7{
+    transform: translate(-600px, 300px);
+     transition-delay:1.2s;  
+}
+.Moon:hover .nlo8{
+    transform: translate(-600px, 0px);
+     transition-delay:1.4s;  
+}
+
