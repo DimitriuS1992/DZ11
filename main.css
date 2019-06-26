@@ -4,103 +4,87 @@ body {
 }
 
 body {
-    margin: 0;
+    
     background-image: url(https://avatars.mds.yandex.net/get-pdb/1627222/aafc44e3-e997-4ea3-95c2-96763459c1f3/orig);
     background-size: cover;
 }
-
-.Moon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    height: 400px;
-    transform: translate(-50%, -50%);
-    transition-property: width;
-    transition-duration:2s;
-    transition-timing-function: ease-in-out;
-
-
+.container{
+   position: relative;
+    margin: 0 auto;
 }
-
-.nlo1,
-.nlo2,
-.nlo3,
-.nlo4,
-.nlo5,
-.nlo6,
-.nlo7,
-.nlo8 {
+.moon{
     position: absolute;
-    top: 50%;
-    left: 40%;
-    margin: -50px 0 0 -50px;
+    top: 40vh;
+    left: 45vw;
+    background:url(https://i.imgur.com/EHrvLa0.png) no-repeat ;
+    background-size: 150%;
     width: 100px;
     height: 100px;
-    transition-property: transform;
-    transition-duration: 1s;
+    transition: all 2s ease-in-out;
 }
-
-.nlo1 {
+.ship{
+    position: absolute;
+    background: url(https://i.imgur.com/7ovKJVk.png) no-repeat;
+    width: 30px;
+    height: 30px;
+     background-size: cover;
+    top: 45vh;
+    left: 50vw;
+    transition: all 2s ease-in-out;
+    
+}
+.ship1 {
     transition-delay: 0s;
 }
 
-.nlo2 {
+.ship2 {
     transition-delay: 0.2s;
 }
 
-.nlo3 {
+.ship3 {
     transition-delay: 0.4s;
 }
 
-.nlo4 {
+.ship4 {
     transition-delay: 0.6s;
 }
 
-.nlo5 {
+.ship5 {
     transition-delay: 0.8s;
 }
 
-.nlo6 {
+.ship6 {
     transition-delay: 1s;
 }
 
-.nlo7 {
+.ship7 {
     transition-delay: 1.2s;
 }
 
-.nlo8 {
+.ship8 {
     transition-delay: 1.4s;
 }
-
-.Moon:hover .nlo1 {
-    transform: translate(-600px, -300px);
+.container:hover .ship1{
+    transform:translate(-250px, -200px)
 }
-
-.Moon:hover .nlo2 {
-    transform: translate(0px, -300px);
+.container:hover .ship2{
+    transform:translate(0, -200px)
 }
-
-.Moon:hover .nlo3 {
-    transform: translate(600px, -300px);
+.container:hover .ship3{
+    transform:translate(250px, -200px)
 }
-
-.Moon:hover .nlo4 {
-    transform: translate(600px, 0px);
+.container:hover .ship4{
+    transform:translate(250px, 0)
 }
-
-.Moon:hover .nlo5 {
-    transform: translate(600px, 300px);
+.container:hover .ship5{
+    transform:translate(250px, 200px)
 }
-
-.Moon:hover .nlo6 {
-    transform: translate(0px, 300px);
+.container:hover .ship6{
+    transform:translate(0, 200px)
 }
-
-.Moon:hover .nlo7 {
-    transform: translate(-600px, 300px);
+.container:hover .ship7{
+    transform:translate(-250px, 200px)
 }
-
-.Moon:hover .nlo8 {
-    transform: translate(-600px, 0px);
+.container:hover .ship8{
+    transform:translate(-250px, 0)
 }
